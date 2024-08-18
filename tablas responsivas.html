@@ -55,9 +55,7 @@
             </tbody>
         </table>
 
-
-
-        <!-- los estilos de las tablas se pueden combinar distintas etiqueta usando por ejemplo:
+         <!-- los estilos de las tablas se pueden combinar distintas etiqueta usando por ejemplo:
           "table-dark (Que coloca toda la tabla de color negro)" y junto a: "table-striped (Se puede intercalar la seleccion de color donde sera 1 si y 1 no)" -->
 
 
@@ -101,6 +99,7 @@
             </tbody>
         </table>
 
+<!-- Con "table hover" podemos hacer que las listas se iluminen al hacer hover por encima de ellas, y con: "table-active" podemos dejar iluminada una linea  -->
 
         <table class="table table-hover table-secondary">
 
@@ -116,7 +115,7 @@
 
             <tbody>
 
-                <tr>
+                <tr >
                     <td>1</td>
                     <td>Enmanuel Medina</td>
                     <td>Arana Flores</td>
@@ -124,7 +123,92 @@
 
                 </tr>
 
+                <tr class="table-active">
+                    <td>2</td>
+                    <td>Victor Hernandez</td>
+                    <td>Cordova Rojas</td>
+                    <td>Ingieniero</td>
+
+                </tr>
+
                 <tr>
+                    <td>3</td>
+                    <td>Yaritza</td>
+                    <td>Alvarez</td>
+                    <td>Ingieniero Electrico</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+<!-- Para agregar bordes a las tablas lo que debemos hacer es usar la clase: (table-bordered) -->
+
+
+        <table class="table table-bordered table-danger">
+
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Profesion</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+
+                <tr >
+                    <td>1</td>
+                    <td>Enmanuel Medina</td>
+                    <td>Arana Flores</td>
+                    <td>Programador</td>
+
+                </tr>
+
+                <tr >
+                    <td>2</td>
+                    <td>Victor Hernandez</td>
+                    <td>Cordova Rojas</td>
+                    <td>Ingieniero</td>
+
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Yaritza</td>
+                    <td>Alvarez</td>
+                    <td>Ingieniero Electrico</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+       <!-- Para quitar bordes a las tablas lo que debemos hacer es usar la clase: (table-borderless) --> 
+
+        <table class="table table-borderless">
+
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Profesion</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+
+                <tr >
+                    <td>1</td>
+                    <td>Enmanuel Medina</td>
+                    <td>Arana Flores</td>
+                    <td>Programador</td>
+
+                </tr>
+
+                <tr >
                     <td>2</td>
                     <td>Victor Hernandez</td>
                     <td>Cordova Rojas</td>
@@ -143,6 +227,74 @@
         </table>
 
 
+<!-- Para hacer responsive una tabla se usa la etiqueta: (table-responsive) colocandolo en un div que englobe a toda la tabla, 
+ Para colocar una tabla mas pequeña se usa la etiqueta:(table-sm), 
+ para colocarle un nombre a la tabla se usa la etiqueta: "caption" y para hacer que aparezca arriba se usa la etiqueta: "caption-top"  -->
+
+
+
+<div class="table-responsive">
+
+        <table class="table table-sm caption-top">
+
+<caption>Lista De Usuarios</caption>
+
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Profesion</th>
+                    <th>Descripcion1</th>
+                    <th>Descripcion2</th>
+                    <th>Descripcion3</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+
+                <tr >
+                    <td>1</td>
+                    <td>Enmanuel Medina</td>
+                    <td>Arana Flores</td>
+                    <td>Programador</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem nostrum est, voluptates mollitia labore enim maxime repudiandae deserunt? At explicabo et perferendis maxime consectetur assumenda asperiores officia. Quis, quia.</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem nostrum est, voluptates mollitia labore enim maxime repudiandae deserunt? At explicabo et perferendis maxime consectetur assumenda asperiores officia. Quis, quia.</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem nostrum est, voluptates mollitia labore enim maxime repudiandae deserunt? At explicabo et perferendis maxime consectetur assumenda asperiores officia. Quis, quia.</td>
+
+
+
+                </tr>
+
+                <tr >
+                    <td>2</td>
+                    <td>Victor Hernandez</td>
+                    <td>Cordova Rojas</td>
+                    <td>Ingieniero</td>
+                 <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem nostrum est, voluptates mollitia labore enim maxime repudiandae deserunt? At explicabo et perferendis maxime consectetur assumenda asperiores officia. Quis, quia.</td>
+                 <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem nostrum est, voluptates mollitia labore enim maxime repudiandae deserunt? At explicabo et perferendis maxime consectetur assumenda asperiores officia. Quis, quia.</td>
+                 <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem nostrum est, voluptates mollitia labore enim maxime repudiandae deserunt? At explicabo et perferendis maxime consectetur assumenda asperiores officia. Quis, quia.</td>
+
+
+
+                </tr>
+
+                <tr> 
+                    <td>3</td>
+                    <td>Yaritza</td>
+                    <td>Alvarez</td>
+                    <td>Ingieniero Electrico</td>
+                  <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem nostrum est, voluptates mollitia labore enim maxime repudiandae deserunt? At explicabo et perferendis maxime consectetur assumenda asperiores officia. Quis, quia.</td>
+                  <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem nostrum est, voluptates mollitia labore enim maxime repudiandae deserunt? At explicabo et perferendis maxime consectetur assumenda asperiores officia. Quis, quia.</td>
+                  <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem nostrum est, voluptates mollitia labore enim maxime repudiandae deserunt? At explicabo et perferendis maxime consectetur assumenda asperiores officia. Quis, quia.</td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     </div>
 
